@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <form action="#" method="post">
+    <form th:action="@{/usuario/save}" method="post">
       <div class="form-group">
         <label for="nombres">Nombres:</label> <input type="text"
           class="form-control" id="nombre" name="nombre" required
@@ -64,9 +64,9 @@
       </div>
 
       <div class="form-group">
-        <label for="email">Email:</label> <input type="email"
-          class="form-control" id="email" name="email" required
-          placeholder="Ingrese su email" autocomplete="off">
+        <label for="emali">Email:</label> <input type="emali"
+          class="form-control" id="email" name="emali" required
+          placeholder="Ingrese su emali" autocomplete="off">
       </div>
 
       <div class="form-group">
@@ -83,6 +83,8 @@
         <button type="submit" class="btn btn-success">Guardar</button>
       </div>
     </form>
+    <br>
+    <br>
 
   </div>
 
